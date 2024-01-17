@@ -1,17 +1,17 @@
 package Bakeries;
 
-import Baked_Goods.BakedGood;
+import Products.Product;
 
 public class Paradise_Bakery implements Bakery {
-    private BakedGood bakedgood;
+    private Product product;
 
-    public Paradise_Bakery(BakedGood bakedgood){
-        this.bakedgood = bakedgood;
+    public Paradise_Bakery(Product product){
+        this.product = product;
     }
 
     @Override
     public void serve(){
         System.out.println("--------Paradise Bakery--------");
-        bakedgood.bake();
+        product.prepare();
     }
 }

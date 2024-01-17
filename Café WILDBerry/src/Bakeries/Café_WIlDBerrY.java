@@ -1,17 +1,17 @@
 package Bakeries;
 
-import Drinks.Drink;
+import Products.Product;
 
 public class Café_WIlDBerrY implements Bakery {
-    private Drink drink;
+    private Product product;
 
-    public Café_WIlDBerrY(Drink drink){
-        this.drink = drink;
+    public Café_WIlDBerrY(Product product){
+        this.product = product;
     }
 
     @Override
     public void serve(){
         System.out.println("--------Cafe WIlDBerrY--------");
-        drink.prepare();
+        product.prepare();
     }
 }
